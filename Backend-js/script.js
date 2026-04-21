@@ -1,13 +1,8 @@
-// foreach  map  indexof find filter
+const fs = require('fs');
 
-function absc() {
-    return 12;
-}
-
-
-
-var ans=absc();
-console.log(ans);
-
+fs.rename("hey.txt", "hello world", function(err){
+    if(err) console.log(err);
+    else console.log("done");
+})
 
 
