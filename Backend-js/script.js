@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-fs.copyFile("hey.txt", "./copy/hello.txt", function(err) {
-    if (err) console.log(err);
-    else console.log("done")
+fs.rmdir("./copy",{recursive: true}, function(err){
+    if(err) console.error(err);
+    else console.log("removed");
 })
 
 
