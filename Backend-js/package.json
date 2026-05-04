@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "accessibility": "^3.0.9",
+    "one-liner-joke": "^1.2.2"
+  }
 }
