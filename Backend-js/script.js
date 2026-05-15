@@ -1,8 +1,12 @@
-const fs = require('fs');
+const express = require('express')
+const app = express();
 
-fs.rm("./copy",{recursive: true}, function(err){
-    if(err) console.error(err);
-    else console.log("removed");
+app.get("/", function(req, res){
+    res.send("champion boy shiva");
 })
 
+app.get("/propile", function(req, res){
+    res.send("is he");
+})
 
+app.listen(3000);
