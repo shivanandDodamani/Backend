@@ -21,9 +21,7 @@ app.get("/about", function(req, res) {
     res.send("about page chala");
 });
 
-app.get("/propile", function(req, res, next ){console
-    return next(new Error("not found"));
-});
+
 
 app.use((err, req, res, next) => {
     console.error(err.stack)
